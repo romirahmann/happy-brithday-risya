@@ -71,10 +71,10 @@ function App() {
     // </div>
     <>
       <section className="h-screen bg-pink-500">
-        <div className="container h-full flex items-center justify-center p">
+        <div className="container p-5 h-full flex md:items-center md:justify-center p">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="desc flex flex-col justify-center items-center my-auto">
-              <h1 className="text-6xl max-w-lg mx-auto font-extrabold mb-4">
+            <div className="desc flex flex-col md:justify-center md:items-center my-auto">
+              <h1 className="text-4xl md:text-6xl max-w-lg mx-auto font-extrabold mb-4">
                 Happy Birthday, My Love!
               </h1>
               <p className="text-xl mb-6 max-w-lg mx-auto">
@@ -84,7 +84,13 @@ function App() {
                 together. Happy Birthday, my forever love. 💖
               </p>
             </div>
-            <div className="image"></div>
+            <div className="image p-5">
+              <img
+                className="w-full h-auto max-w-xl rounded-xl"
+                src="/public/img/hero.jpg"
+                alt="image description"
+              />
+            </div>
           </div>
         </div>
       </section>
